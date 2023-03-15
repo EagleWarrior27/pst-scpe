@@ -1,0 +1,64 @@
+.App-header {
+  background-color: #00264e;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tahoma';
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+}
+
+.App-nav {
+  background-color: #c79316;
+  padding-top: 5vh;
+  min-height: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  text-align: center;
+  font-family: 'Helvetica';
+  font-size: 16;
+}
+
+.App-article {
+  padding-bottom: calc(1rem - 72px);
+  background: linear-gradient(to bottom, rgba(248, 236, 209 , 0.4) 0%, rgba(248, 236, 209  , 0.5) 100%), url("./imagenes/CC.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+
+.App-section {
+  opacity: 0.8;
+  background-color: #000000;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+
+}
+
+.App-footer {
+  background-color: #00264e;
+  padding-top: 5vh;
+  min-height: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  text-align: center;
+  font-family: "Helvetica";
+}
