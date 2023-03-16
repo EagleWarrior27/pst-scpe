@@ -25,10 +25,8 @@ class Devolucion extends React.Component {
   render(){
     return (
       <section className = "App-section">
-        <br/>
         <h1>Registro de Devolución</h1>
         <hr align="center" noshade="noshade" size="10"  width="90%" />
-        <br/>
         <div class="form-group col-md-3">
           <label>Id Préstamo</label>
           <input type="text" class="form-control"
@@ -36,45 +34,50 @@ class Devolucion extends React.Component {
             onChange={(value)=> this.setState({idPrestamo:value.target.value})}
           />
         </div>
+        <button type="submit" class="btn btn-primary" onClick={()=>this.findPrestamo()}><Image  src= {buscar} /> Buscar</button>
+        
+        <div className='form-row justify-content-center form-container'>
+          <div class="form-group col-md-5">
+            <label>Solicitante</label>
+            <input type="text" class="form-control"
+              placeholder="Solicitante" value={this.state.solicitante}
+              onChange={(value)=> this.setState({solicitante:value.target.value})}
+            />
+          </div>
 
-          <button type="submit" class="btn btn-primary" onClick={()=>this.findPrestamo()}><Image  src= {buscar} /> Buscar</button>
-          <br/>
+          <div class="form-group col-md-5">
+            <label>Id Equipo</label>
+            <input type="text" class="form-control"
+              placeholder="Id Préstamo" value={this.state.idEquipo}
+              onChange={(value)=> this.setState({idEquipo:value.target.value})}
+            />
+          </div>
 
-        <div class="form-group col-md-4">
-          <label>Solicitante</label>
-          <input type="text" class="form-control"
-            placeholder="Solicitante" value={this.state.solicitante}
-            onChange={(value)=> this.setState({solicitante:value.target.value})}
-          />
+          <div class="form-group col-md-5">
+            <label>Tipo de Equipo</label>
+            <input type="text" class="form-control"
+              placeholder="Tipo de Equipo" value={this.state.tipoEquipo}
+              onChange={(value)=> this.setState({tipoEquipo:value.target.value})}
+            />
+          </div>
 
-          <br />
-          <label>Id Equipo</label>
-          <input type="text" class="form-control"
-            placeholder="Id Préstamo" value={this.state.idEquipo}
-            onChange={(value)=> this.setState({idEquipo:value.target.value})}
-          />
+          <div class="form-group col-md-5">
+            <label>Fecha Devolucion</label>
+            <input type="date" class="form-control"
+              placeholder="dd-mm-aaaa"
+              value={this.state.fechaDevolucion}
+              onChange={(value)=> this.setState({fechaDevolucion:value.target.value})}
+            />
+          </div>
 
-          <label>Tipo de Equipo</label>
-          <input type="text" class="form-control"
-            placeholder="Tipo de Equipo" value={this.state.tipoEquipo}
-            onChange={(value)=> this.setState({tipoEquipo:value.target.value})}
-          />
-        </div>
-
-        <div class="form-group col-md-4">
-          <label>Fecha Devolucion</label>
-          <input type="date" class="form-control"
-            placeholder="dd-mm-aaaa"
-            value={this.state.fechaDevolucion}
-            onChange={(value)=> this.setState({fechaDevolucion:value.target.value})}
-          />
-
-          <label>Hora Devolucion</label>
-          <input type="time" class="form-control"
-            placeholder="hh:mm"
-            value={this.state.horaDevolucion}
-            onChange={(value)=> this.setState({horaDevolucion:value.target.value})}
-          />
+          <div class="form-group col-md-5">
+            <label>Hora Devolucion</label>
+            <input type="time" class="form-control"
+              placeholder="hh:mm"
+              value={this.state.horaDevolucion}
+              onChange={(value)=> this.setState({horaDevolucion:value.target.value})}
+            />
+          </div>
         </div>
 
         <div class="btn-group">

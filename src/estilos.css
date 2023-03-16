@@ -1,20 +1,7 @@
-.App-header {
-  background-color: #00264e;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Tahoma';
-  font-size: calc(10px + 2vmin);
-  color: white;
-  text-align: center;
-}
-
 .App-nav {
   background-color: #c79316;
-  padding-top: 5vh;
-  min-height: 2vh;
+  padding-top: 2vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +26,7 @@
 .App-section {
   opacity: 0.8;
   background-color: #000000;
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,8 +38,8 @@
 
 .App-footer {
   background-color: #00264e;
-  padding-top: 5vh;
-  min-height: 2vh;
+  padding: 2vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,4 +48,9 @@
   color: white;
   text-align: center;
   font-family: "Helvetica";
+}
+
+.form-container {
+  text-align: center;
+  width: 60%;
 }

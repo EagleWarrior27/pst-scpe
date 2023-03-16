@@ -3,7 +3,7 @@ import './estilos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 
 import Principal from "./componentes/Principal";
 import Prestamo from "./componentes/Prestamo/RegistroPrestamo";
@@ -16,24 +16,26 @@ export default function App() {
   return (
     <Router>
       <Navbar className="App-nav" expand="lg">
-        <Navbar.Brand href="/">SCPE</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Container>
+          <Navbar.Brand href="/">SCPE</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="/prestamo">Préstamo</Nav.Link>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link href="/prestamo">Préstamo</Nav.Link>
 
-            <Nav.Link href="/devolucion">Devolución</Nav.Link>
+              <Nav.Link href="/devolucion">Devolución</Nav.Link>
 
-            <Nav.Link href="/registroEquipo">Equipo</Nav.Link>
+              <Nav.Link href="/registroEquipo">Equipo</Nav.Link>
 
-            <NavDropdown title="Control" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/controlEquipos">Equipos</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/controlPrestamos">Préstamos</NavDropdown.Item>
-            </NavDropdown>
-        	</Nav>
-        </Navbar.Collapse>
+              <NavDropdown title="Control" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/controlEquipos">Equipos</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/controlPrestamos">Préstamos</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
       </Navbar>
 
       <article className = "App-article">
@@ -46,8 +48,7 @@ export default function App() {
       </article>
 
       <footer className = "App-footer">
-        <h5>Mayan Soft Tech</h5>
-        <small>Yucatán, México</small>
+        <small>Copyright© 2019 - CodersPST</small>
       </footer>
     </Router>
   );

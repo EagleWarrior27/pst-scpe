@@ -26,7 +26,7 @@ class Equipo extends React.Component{
         <h1>Registro de Equipo</h1>
         <hr align="center" noshade="noshade" size="10"  width="90%" />
 
-        <div class="form-row justify-content-center">
+        <div class="form-row justify-content-center form-container">
           <div class="form-group col-md-5">
             <label for="inputPassword4">ID Equipo</label>
             <input type="text" class="form-control"
